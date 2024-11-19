@@ -1,0 +1,22 @@
+// 引入清楚默认样式
+// 在css中@use是导入css样式表，这种方式通常在css文件中的使用
+@use './reset.scss';
+
+
+// 定义滚动条的总容器
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* 定义滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+    background-color: #8d0606;  /* 轨道的背景色 */
+    border-radius: 10px;
+    background: #8d0606;
+  }
+
+/* 定义滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background-color: #888;     /* 滑块的颜色 */
+  border-radius: 10px;        /* 滑块的圆角 */
+}
